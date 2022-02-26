@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="icon" href="css/images/AB_logo.png">
+    <title>Arab World RolePlay</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="img-container">
+            <img src="css/images/AB_logo.png" height="120px" width="200px" class="logo">
+        </div>
+
+        <h1>𝐀𝐑𝐀𝐁 𝐖𝐎𝐑𝐋𝐃 𝐑𝐎𝐋𝐄𝐏𝐋𝐀𝐘</h1>
+           
+           <form>
+
+             <img src="css/images/Avatar.png" height="50px" width="50px" class="img">
+             <input type="text" name="username" required>
+
+             <img src="css/images/envelop.png" height="50px" width="50px" class="img">
+             <input type="email" name="email" required><br>
+
+             <img src="css/images/lock.png" height="50px" width="50px" class="img">
+             <input type="password" name="password" required>
+
+             <img src="css/images/lock2.png" height="50px" width="50px" class="img">
+             <input type="password" name="password2" required><br>
+              
+             <button class="btn">𝐒𝐈𝐆𝐍 𝐈𝐍</button>
+
+             <button onclick="copyToClipboard()" class="btn2">
+                <img src="css/images/discord-logo.png" height="150px" width="150px" class="discord">
+            </button>
+
+            <button onclick='location.href="main.html"' class="btn">𝐁𝐀𝐂𝐊</button>
+
+           </form> 
+
+    </div>
+</body>
+
+<script>
+    function copyToClipboard(text) {
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = "https://discord.gg/BZSH4srvBd";
+        inputc.focus();
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+    }
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="css/images/logo.png">
+    <title>Vista Script</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>𝐀𝐑𝐀𝐁 𝐖𝐎𝐑𝐋𝐃 𝐑𝐎𝐋𝐄𝐏𝐋𝐀𝐘</h1>
+
+        <button onclick='location.href="login.html"' class="btn">
+            <img src="css/images/Avatar.png" height="120px" width="120px" class="img">
+            <h2 style="color: white;">𝐋𝐎𝐆𝐈𝐍</h2>
+        </button>
+
+        <img src="css/images/AB_logo.png" height="200px" width="290px" class="logo">
+
+        <button onclick='location.href="register.html"' class="btn">
+            <img src="css/images/Door.png" height="120px" width="120px" class="img">
+            <h2 style="color: white;">𝐒𝐈𝐆𝐍 𝐈𝐍</h2>
+        </button><br>
+
+        <button onclick="copyToClipboard()" class="btn2">
+            <img src="css/images/discord-logo.png" height="150px" width="150px" class="discord">
+        </button>
+
+    </div>
+</body>
+
+<script>
+    function copyToClipboard(text) {
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = "https://discord.gg/BZSH4srvBd";
+        inputc.focus();
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+    }
+</script>
+
+</html>
